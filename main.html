@@ -8,7 +8,7 @@
     <div>
         <form action="/login" method="post">
         
-        <!-- Username -->
+        <!-- Full Name -->
         <label for="Name">Name:</label><br>
         <input 
             type="text",
@@ -27,6 +27,47 @@
         </input>  
             <br><br>
         
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input 
+            type="email",
+            id="email",
+            name="email",
+            placeholder="example@sample.only"
+            required>
+        </input>    
+            <br><br>
+
+        <!-- Department -->
+        <label for="department-choice">Department/Program:</label><br>
+            <input list="departments" id="idepartment-choice" name="ice-cream-choice" placeholder="Choose your Dept"/>
+
+            <datalist id="departments">
+            <option value="CAS"></option>
+            <option value="CCIS"></option>
+            <option value="CHS"></option>
+            <option value="CMET"></option>
+            <option value="ETYCB"></option>
+            <option value="MIA"></option>
+            <option value="MITL"></option>
+            <option value="SHS"></option>
+            </datalist> 
+
+
+            <input list="departments" id="idepartment-choice" name="ice-cream-choice" placeholder="Choose your Dept"/>
+
+            <datalist id="departments">
+            <option value="CAS"></option>
+            <option value="CCIS"></option>
+            <option value="CHS"></option>
+            <option value="CMET"></option>
+            <option value="ETYCB"></option>
+            <option value="MIA"></option>
+            <option value="MITL"></option>
+            <option value="SHS"></option>
+            </datalist> 
+            <br><br>
+        
         <!-- Password -->
         <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required><br><br>
@@ -35,17 +76,6 @@
         <input type="submit" value="Login">
     
     </form>
-    </div>
-    <div class="container", id="container">
 
-        <input class="name", placeholder="Username">
-        <div class="input">input text here</div>
-        <input class="pass", placeholder="Password" type="password">
-            
-        </div>
-        <div>
-
-        </div>
-    </div>
 </body>
 </html>
